@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body {
+    background-color: lightpink;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.menu {
+    background-color: palevioletred;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+a {
+    color: purple;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.site-title, .site-subtitle {
+    text-align: center;
+    color: purple;
+}
+
+.site-subtitle {
+    text-align: italic;
+}
