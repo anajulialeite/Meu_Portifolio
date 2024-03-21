@@ -1,12 +1,29 @@
 @charset "UTF-8";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: lightpink;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu {
     background-color: palevioletred;
+    position: fixed;
+    width: 100vw;
+    top: 0;
 }
 
 .menu ul {
@@ -16,6 +33,11 @@ body {
 
 .menu li {
     list-style: none;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
 }
 
 a {
@@ -33,6 +55,29 @@ a:hover {
     color: purple;
 }
 
+.site-title {
+    font-size: 4em;
+}
+
 .site-subtitle {
     text-align: italic;
 }
+
+footer{
+    background-color: palevioletred;
+    color: purple;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+  }
+  
+  footer a{
+    color: purple;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  
+  footer a:hover{
+    text-decoration: underline;
+    color: white;
+  }
