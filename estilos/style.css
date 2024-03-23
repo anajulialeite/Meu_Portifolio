@@ -10,10 +10,11 @@ body {
     background-color: lightpink;
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
+    overflow-y: hidden;
 }
 
 header {
-    height: 100vh;
+    height: 96vh;
     display: flex;
     justify-content: center;
     align-items: center;

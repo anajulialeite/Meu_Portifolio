@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+    background-color: lightpink;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1, h2 {
+    color: purple;
+}
+
+aside {
+    background-color: rgba(216, 112, 147, 0.562);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.418);
+}
+
+a {
+    color: purple;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
