@@ -80,40 +80,22 @@ a:hover {
     text-align: italic;
 }
 
-footer {
+footer{
     background-color: #753300;
     color: #F7954A;
     text-align: center;
     font-size: 0.8em;
     padding: 5px;
-}
-
-footer a {
+  }
+  
+  footer a{
     color: #F7954A;
     font-weight: bolder;
     text-decoration: none;
-}
-
-footer a:hover {
+  }
+  
+  footer a:hover{
     text-decoration: underline;
     color: white;
-}
-
-@media only screen and (max-width: 600px) {
-    header {
-        height: 70vh; 
-    }
-
-    .site-title {
-        font-size: 2em; 
-    }
-
-    .center {
-        top: 50%; 
-    }
-
-    .text-below-logo {
-        margin-top: 50px; 
-    }
-}
+  }
 
