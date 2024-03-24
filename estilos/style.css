@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    height: 96vh;
+    height: 40vh; /* Altura ajustável conforme necessário */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,8 +23,9 @@ header {
 .menu {
     background-color: #753300;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     top: 0;
+    z-index: 999; /* Certifique-se de que o menu esteja na frente de outros elementos */
 }
 
 .menu ul {
@@ -53,31 +54,26 @@ a:hover {
 
 .container {
     position: relative;
+    width: 90%; /* Largura ajustável conforme necessário */
+    margin: 0 auto; /* Centraliza o conteúdo */
 }
 
 .center {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%);
+    text-align: center; /* Centraliza o conteúdo */
 }
 
 .text-below-logo {
     text-align: center;
-    margin-top: 100px;
-}
-
-.site-title, .site-subtitle {
-    text-align: center;
-    color: #753300;
+    margin-top: 20px; /* Espaçamento inferior ajustável */
 }
 
 .site-title {
-    font-size: 4em;
+    font-size: 2em; /* Tamanho do título ajustável */
+    color: #753300;
 }
 
 .site-subtitle {
-    text-align: italic;
+    font-style: italic;
 }
 
 footer{
@@ -85,12 +81,12 @@ footer{
     color: #F7954A;
     text-align: center;
     font-size: 0.8em;
-    padding: 5px;
+    padding: 10px 0;
 }
 
 footer a{
     color: #F7954A;
-    font-weight: bolder;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -99,29 +95,16 @@ footer a:hover{
     color: white;
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     body {
         font-size: 16px; 
     }
 
-    .menu {
-        display: none; 
-    }
-
     header {
-        height: auto; 
-    }
-
-    .center {
-        top: 50%; 
-        transform: translate(-50%, -50%);
+        height: 30vh; 
     }
 
     .site-title {
-        font-size: 3em; 
-    }
-
-    .site-subtitle {
-        font-size: 0.8em; 
+        font-size: 1.5em; 
     }
 }
