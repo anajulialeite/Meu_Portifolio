@@ -13,30 +13,28 @@ body {
     overflow-y: hidden;
 }
 
-header {
-    height: 10vh; /* Altura do cabeçalho ajustável */
-    background-color: #753300;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .menu {
+    background-color: #753300;
+    position: fixed;
     width: 100%;
-    padding: 10px 0; /* Adiciona um pouco de espaço acima e abaixo do menu */
+    top: 0;
+    z-index: 999;
+    display: none; /* Inicia oculto em telas maiores */
 }
 
 .menu ul {
     display: flex;
-    justify-content: center;
-    list-style: none;
+    justify-content: space-around;
+    padding: 10px 0;
 }
 
 .menu li {
-    margin: 0 10px; /* Espaçamento entre os itens do menu */
+    list-style: none;
 }
 
 .menu a {
+    display: block;
+    padding: 10px 20px;
     color: #F7954A;
     text-decoration: none;
 }
@@ -88,18 +86,12 @@ footer a:hover {
     color: white;
 }
 
-
 @media only screen and (max-width: 600px) {
-    header {
-        height: 15vh; 
+    .menu {
+        display: block; 
     }
 
-    .menu ul {
-        flex-direction: column; 
-        align-items: center; 
-    }
-
-    .menu li {
-        margin: 10px 0; 
+    .container {
+        padding-top: 60px; 
     }
 }
