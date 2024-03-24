@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background-color: lightpink;
+    background-color: #F7954A;
     text-align: justify;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -20,13 +20,14 @@ main {
 }
 
 h1 {
-    color: purple;
+    color: #753300;
     text-align: center;
 }
 
 a {
-    color: purple;
+    color: #753300;
     text-decoration: none;
+    font-weight: bolder;
 }
 
 a:hover {

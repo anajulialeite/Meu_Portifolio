@@ -1,27 +1,48 @@
 @charset "UTF-8";
 
 body {
-    background-color: lightpink;
+    background-color: #F7954A;
     font-family: 'Times New Roman', Times, serif;
 }
 
 h1, h2 {
-    color: purple;
+    color: #753300;
+}
+
+h2 {
+    background-color: #753300;
+    text-align: center;
+    font-weight: bold;
+    color: #F7954A;
+    padding: 10px;
+    margin: -10px -0px 0px -0px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 aside {
-    background-color: rgba(216, 112, 147, 0.562);
+    background-color: white;
     padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.418);
+    border-radius: 0px 0px 20px 20px ;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.288);
 }
 
 a {
-    color: purple;
+    color: #753300;
     text-decoration: none;
+    font-weight: bolder;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #F56A00;
+}
+
+.hover {
+    color: #753300;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.hover a:hover {
     color: white;
 }

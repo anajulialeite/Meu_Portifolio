@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: lightpink;
+    background-color: #f7954ad0;
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
     overflow-y: hidden;
@@ -21,7 +21,7 @@ header {
 }
 
 .menu {
-    background-color: palevioletred;
+    background-color: #753300;
     position: fixed;
     width: 100vw;
     top: 0;
@@ -42,7 +42,7 @@ header {
 }
 
 a {
-    color: purple;
+    color: #F7954A;
     text-decoration: none;
 }
 
@@ -51,9 +51,25 @@ a:hover {
     color: white;
 }
 
+.container {
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.text-below-logo {
+    text-align: center;
+    margin-top: 100px;
+}
+
 .site-title, .site-subtitle {
     text-align: center;
-    color: purple;
+    color: #753300;
 }
 
 .site-title {
@@ -65,15 +81,15 @@ a:hover {
 }
 
 footer{
-    background-color: palevioletred;
-    color: purple;
+    background-color: #753300;
+    color: #F7954A;
     text-align: center;
     font-size: 0.8em;
     padding: 5px;
   }
   
   footer a{
-    color: purple;
+    color: #F7954A;
     font-weight: bolder;
     text-decoration: none;
   }

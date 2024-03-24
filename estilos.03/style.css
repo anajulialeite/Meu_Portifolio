@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background-color: lightpink;
+    background-color: #f7954ad0;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -10,12 +10,13 @@ body {
 }
 
 h1, h2 {
-    color: purple;
+    color: #753300;
 }
 
 a {
-    color: purple;
+    color: #753300;
     text-decoration: none;
+    font-weight: bolder;
 }
 
 a:hover {
