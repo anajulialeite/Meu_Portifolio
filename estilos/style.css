@@ -13,19 +13,23 @@ body {
     overflow-y: hidden;
 }
 
+header {
+    height: 96vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .menu {
     background-color: #753300;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     top: 0;
-    z-index: 999;
-    display: none; /* Inicia oculto em telas maiores */
 }
 
 .menu ul {
     display: flex;
     justify-content: space-around;
-    padding: 10px 0;
 }
 
 .menu li {
@@ -35,36 +39,45 @@ body {
 .menu a {
     display: block;
     padding: 10px 20px;
+}
+
+a {
     color: #F7954A;
     text-decoration: none;
 }
 
-.menu a:hover {
+a:hover {
     text-decoration: underline;
     color: white;
 }
 
 .container {
-    width: 90%;
-    margin: 0 auto;
+    position: relative;
 }
 
 .center {
-    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .text-below-logo {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
-.site-title {
-    font-size: 2em;
+.site-title, .site-subtitle {
+    text-align: center;
     color: #753300;
 }
 
+.site-title {
+    font-size: 4em;
+}
+
 .site-subtitle {
-    font-style: italic;
+    text-align: italic;
 }
 
 footer {
@@ -72,12 +85,12 @@ footer {
     color: #F7954A;
     text-align: center;
     font-size: 0.8em;
-    padding: 10px 0;
+    padding: 5px;
 }
 
 footer a {
     color: #F7954A;
-    font-weight: bold;
+    font-weight: bolder;
     text-decoration: none;
 }
 
@@ -87,11 +100,20 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 600px) {
-    .menu {
-        display: block; 
+    header {
+        height: 70vh; 
     }
 
-    .container {
-        padding-top: 60px; 
+    .site-title {
+        font-size: 2em; 
+    }
+
+    .center {
+        top: 50%; 
+    }
+
+    .text-below-logo {
+        margin-top: 50px; 
     }
 }
+
