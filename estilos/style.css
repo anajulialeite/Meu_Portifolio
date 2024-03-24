@@ -14,33 +14,29 @@ body {
 }
 
 header {
-    height: 40vh;
+    height: 10vh; /* Altura do cabeçalho ajustável */
+    background-color: #753300;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .menu {
-    background-color: #753300;
-    position: fixed;
     width: 100%;
-    top: 0;
-    z-index: 999;
+    padding: 10px 0; /* Adiciona um pouco de espaço acima e abaixo do menu */
 }
 
 .menu ul {
     display: flex;
-    justify-content: space-around;
-    padding: 10px 0; /* Adiciona um pouco de espaço acima e abaixo do menu */
-}
-
-.menu li {
+    justify-content: center;
     list-style: none;
 }
 
+.menu li {
+    margin: 0 10px; /* Espaçamento entre os itens do menu */
+}
+
 .menu a {
-    display: block;
-    padding: 10px 20px;
     color: #F7954A;
     text-decoration: none;
 }
@@ -92,21 +88,18 @@ footer a:hover {
     color: white;
 }
 
+
 @media only screen and (max-width: 600px) {
-    body {
-        font-size: 16px;
-    }
-
     header {
-        height: 30vh;
+        height: 15vh; 
     }
 
-    .menu {
-        padding-top: 50px; 
+    .menu ul {
+        flex-direction: column; 
+        align-items: center; 
     }
 
-    .site-title {
-        font-size: 1.5em;
+    .menu li {
+        margin: 10px 0; 
     }
 }
-
