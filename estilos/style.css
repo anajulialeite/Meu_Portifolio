@@ -86,15 +86,42 @@ footer{
     text-align: center;
     font-size: 0.8em;
     padding: 5px;
-  }
-  
-  footer a{
+}
+
+footer a{
     color: #F7954A;
     font-weight: bolder;
     text-decoration: none;
-  }
-  
-  footer a:hover{
+}
+
+footer a:hover{
     text-decoration: underline;
     color: white;
-  }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 16px; 
+    }
+
+    .menu {
+        display: none; 
+    }
+
+    header {
+        height: auto; 
+    }
+
+    .center {
+        top: 50%; 
+        transform: translate(-50%, -50%);
+    }
+
+    .site-title {
+        font-size: 3em; 
+    }
+
+    .site-subtitle {
+        font-size: 0.8em; 
+    }
+}
