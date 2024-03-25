@@ -4,6 +4,7 @@ body {
     background-color: #f7954ad0;
     font-family: 'Times New Roman', Times, serif;
     overflow: hidden;
+    margin: 0;
 }
 
 .centro {
@@ -15,14 +16,14 @@ h1, h2 {
 }
 
 .container {
-    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 200px;
 }
 
 .lado {
-    position: relative;
-    bottom: 400px;
-    float: right;
-    margin-left: 200px;
+    margin-left: auto;
 }
 
 a {
@@ -37,9 +38,13 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
-    .lado {
-        float: none;
-        margin-left: 200px;
-        margin-bottom: 20px;
+    .container {
+        flex-direction: column;
+        text-align: center;
     }
 }
+    
+    .lado {
+        margin-left: auto;
+        margin-top: 20px;
+    }
