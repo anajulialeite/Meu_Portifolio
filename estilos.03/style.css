@@ -46,7 +46,7 @@ a:hover {
 .lado {
     position: static;
     float: none;
-    margin: -100px auto 100px;
+    margin: -50px auto 50px;
     width: auto;
     bottom: auto;
 }
