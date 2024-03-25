@@ -35,18 +35,3 @@ a:hover {
     text-decoration: underline;
     color: white;
 }
-
-@media screen and (max-width: 768px) {
-    .container {
-        position: static;
-        padding: 20px;
-    }
-}
-
-.lado {
-    position: static;
-    float: none;
-    margin: -100px auto 50px;
-    width: auto;
-    bottom: auto;
-}
