@@ -29,11 +29,11 @@ h1, h2 {
 
 .lado img {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .lado ul li:last-child {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 a {
