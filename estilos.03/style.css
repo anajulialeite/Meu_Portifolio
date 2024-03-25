@@ -39,7 +39,7 @@ a:hover {
 @media screen and (max-width: 768px) {
     .lado {
         float: none;
-        margin-left: 0;
+        margin-left: 200px;
         margin-bottom: 20px;
     }
 }
