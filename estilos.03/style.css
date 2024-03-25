@@ -16,14 +16,17 @@ h1, h2 {
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 200px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
 }
 
 .lado {
-    margin-left: auto;
+    position: relative;
+    float: 0 auto;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 a {
@@ -38,13 +41,9 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        text-align: center;
+    .lado {
+        float: none;
+        margin-left: 0;
+        margin-bottom: 20px;
     }
 }
-    
-    .lado {
-        margin-left: auto;
-        margin-top: 20px;
-    }
