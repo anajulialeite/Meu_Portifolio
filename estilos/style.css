@@ -62,6 +62,17 @@ a:hover {
     transform: translate(-50%);
 }
 
+.foto {
+    position: absolute;
+}
+
+.baixo {
+    position: relative;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
 .text-below-logo {
     text-align: center;
     margin-top: 100px;
@@ -74,6 +85,7 @@ a:hover {
 
 .site-title {
     font-size: 4em;
+    margin-bottom: 60%;
 }
 
 .site-subtitle {
@@ -86,6 +98,7 @@ footer{
     text-align: center;
     font-size: 0.8em;
     padding: 5px;
+    position: relative;
   }
   
   footer a{

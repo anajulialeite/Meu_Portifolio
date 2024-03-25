@@ -3,6 +3,7 @@
 body {
     background-color: #f7954ad0;
     font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
 }
 
 .centro {
@@ -11,6 +12,17 @@ body {
 
 h1, h2 {
     color: #753300;
+}
+
+.container {
+    position: absolute;
+}
+
+.lado {
+    position: relative;
+    bottom: 400px;
+    float: right;
+    margin-left: 200px;
 }
 
 a {
