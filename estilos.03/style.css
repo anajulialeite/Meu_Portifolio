@@ -22,9 +22,6 @@ h1, h2 {
 }
 
 .lado {
-    position: relative;
-    bottom: 0;
-    float: none;
     margin-left: 0;
     margin-top: 20px;
 }
