@@ -24,12 +24,12 @@ h1, h2 {
     position: relative;
     float: none; 
     margin-left: 0; 
-    margin-top: 20px; 
+    margin-top: 30px; 
 }
 
 .lado img {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .lado ul li:last-child {
