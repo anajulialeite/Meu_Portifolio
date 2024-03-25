@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 body {
@@ -110,29 +111,3 @@ footer{
     text-decoration: underline;
     color: white;
   }
-
-  @media screen and (max-width: 768px) {
-    header {
-        height: 50vh; 
-    }
-    
-    .menu {
-        position: static; 
-        width: auto; 
-    }
-
-    .menu ul {
-        flex-direction: column; 
-    }
-
-    .site-title {
-        font-size: 3em; 
-        margin-bottom: 30%;
-    }
-
-    .center, .foto, .baixo {
-        position: static; 
-        transform: none; 
-        text-align: center;
-    }
-}
