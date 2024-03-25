@@ -48,12 +48,22 @@ a:hover {
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     .container {
         padding: 0 10px; 
     }
     
     .lado img {
-        top: -20px; /
+        top: -20px; 
     }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+
+.lado img {
+    top: -20px;
 }
