@@ -14,21 +14,26 @@ h1, h2 {
 }
 
 .container {
-    position: relative; /* Alterado para relativo */
-    max-width: 1000px; /* Define uma largura máxima para o container */
-    margin: 0 auto; /* Centraliza o container na tela */
-    padding: 0 20px; /* Adiciona um pouco de espaço interno */
+    position: relative; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 0 20px;
 }
 
 .lado {
     position: relative;
-    float: none; /* Alterado para não flutuar */
-    margin-left: 0; /* Alterado para 0 */
-    margin-top: 20px; /* Adiciona um pouco de espaço superior */
+    float: none; 
+    margin-left: 0; 
+    margin-top: 20px; 
 }
 
 .lado img {
-    position: relative; /* Define a posição relativa para a imagem */
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.lado ul li:last-child {
+    margin-bottom: 20px;
 }
 
 a {
@@ -42,13 +47,13 @@ a:hover {
     color: white;
 }
 
-/* Mídia Query para telas menores */
+
 @media screen and (max-width: 768px) {
     .container {
-        padding: 0 10px; /* Reduz o espaço interno */
+        padding: 0 10px; 
     }
-
+    
     .lado img {
-        top: -20px; /* Ajusta conforme necessário para mover a imagem para cima */
+        top: -20px; /
     }
 }
