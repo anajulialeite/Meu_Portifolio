@@ -57,7 +57,7 @@ a:hover {
 
 .center {
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%);
 }
@@ -75,7 +75,7 @@ a:hover {
 
 .text-below-logo {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 90px;
 }
 
 .site-title, .site-subtitle {
@@ -84,8 +84,25 @@ a:hover {
 }
 
 .site-title {
+    background: linear-gradient(45deg, #E66D40, #E35317, #BD3D0E, #E66D40);
+    background-size: 400% 100%;
     font-size: 4em;
     margin-bottom: 60%;
+    text-transform: uppercase;
+    animation: degrade 10s linear infinite alternate;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes degrade {
+    0%{
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
 }
 
 .site-subtitle {
