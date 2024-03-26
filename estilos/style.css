@@ -51,10 +51,6 @@ a:hover {
     color: white;
 }
 
-.container {
-    position: relative;
-}
-
 .center {
     position: absolute;
     top: 30%;
@@ -62,25 +58,13 @@ a:hover {
     transform: translate(-50%);
 }
 
-.foto {
-    position: absolute;
-}
-
 .baixo {
     position: relative;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%);
 }
 
 .text-below-logo {
     text-align: center;
     margin-top: 90px;
-}
-
-.site-title, .site-subtitle {
-    text-align: center;
-    color: #753300;
 }
 
 .site-title {
@@ -89,6 +73,7 @@ a:hover {
     font-size: 4em;
     margin-bottom: 60%;
     text-transform: uppercase;
+    text-align: center;
     animation: degrade 10s linear infinite alternate;
 
     -webkit-background-clip: text;
@@ -127,4 +112,18 @@ footer{
   footer a:hover{
     text-decoration: underline;
     color: white;
+  }
+
+  @media (max-width: 600px) {
+    .site-title {
+        margin-top: 82px;
+        font-size: 3em;
+    }
+    .center img {
+        width: 110px;
+    }
+
+    .text-below-logo {
+        margin-top: 26px;
+    }
   }
