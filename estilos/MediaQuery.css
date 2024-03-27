@@ -3,7 +3,7 @@
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
     .site-title {
-        margin-top: 70px;
+        margin-top: 60px;
         font-size: 3em;
     }
     .center img {
@@ -11,6 +11,14 @@
     }
 
     .text-below-logo {
-        margin-top: 26px;
+        text-align: center;
+        margin-top: 90px;
+    }
+
+    .footer {
+        text-align: center;
+        font-size: 0.8em;
+        padding: 3px;
+
     }
   }
