@@ -19,11 +19,31 @@ h2 {
     border-radius: 10px 10px 0px 0px;
 }
 
-aside {
-    background-color: white;
+.work_container {
+    background-color: wheat;
     padding: 10px;
     border-radius: 0px 0px 20px 20px ;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.288);
+}
+
+.work_container img {
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.849);
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.work_container img:hover {
+    border: 3px solid #ff6600;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.774);
+    transition: transform 0.5s, border 0.3s;
+}
+
+.work_container img:active {
+    transform: scale(95%);
 }
 
 a {
