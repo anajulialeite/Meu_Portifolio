@@ -1,7 +1,15 @@
 @charset "UTF-8";
 
 @media (max-width: 600px) {
-    body {
-        background-color: red;
+    .site-title {
+        margin-top: 82px;
+        font-size: 3em;
     }
-}
+    .center img {
+        width: 110px;
+    }
+
+    .text-below-logo {
+        margin-top: 26px;
+    }
+  }
