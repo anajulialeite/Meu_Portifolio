@@ -20,7 +20,7 @@
     .text-below-logo {
         padding: 101px;
         text-align: center;
-        margin-top: 94px;
+        margin-top: 389px;
     }
 
     .baixo {
@@ -28,28 +28,31 @@
     }
 
     footer {
-        padding: 8px;
     }
+}
 
   @media screen and (min-width: 769px) and (max-width: 992px) {
 
     .center {
-        position: absolute;
-        top: 9%;
-        left: 50%;
-        transform: translate(-50%)
+        top: 39%;
     }
-
+    .site-title {
+        background-size: 400% 100%;
+        font-size: 4em;
+        margin-bottom: 139%;
+        text-transform: uppercase;
+        text-align: center;
+    }
     .text-below-logo {
-        margin-top: 391px;
+        margin-top: 100px;
     }
     
     footer {
+        text-align: center;
+        font-size: 0.8em;
         padding: 12px;
     }
-
-    
-  }
+}
 
   @media screen and (min-width: 993px) and (max-width: 1200px) {
 
