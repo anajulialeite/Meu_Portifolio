@@ -1,17 +1,54 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 600px) and (max-width: 992px) {
+@media screen and (min-width: 600px) and (max-width: 768px) {
 
     .site-title {
         margin-top: 60px;
         font-size: 3em;
     }
     .center img {
-        width: 110px;
+       width: 110px;
     }
 
     .text-below-logo {
+        padding: 101px;
         text-align: center;
         margin-top: 90px;
     }
+
+    .baixo {
+        margin-top: 103px;
+    }
+
+    footer {
+        padding: 8px;
+    }
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 992px) {
+
+    .center {
+        position: absolute;
+        top: 9%;
+        left: 50%;
+        transform: translate(-50%)
+    }
+
+    .text-below-logo {
+        margin-top: 391px;
+    }
+    
+    footer {
+        padding: 12px;
+    }
+
+    
+  }
+
+  @media screen and (min-width: 993px) and (max-width: 1200px) {
+
+  }
+
+  @media screen and (min-width: 1201px) {
+
   }
