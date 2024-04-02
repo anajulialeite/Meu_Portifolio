@@ -2,18 +2,25 @@
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
 
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
     .site-title {
-        margin-top: 60px;
+        margin-top: 160px;
         font-size: 3em;
     }
     .center img {
-       width: 110px;
+        margin-top: 101px;
     }
 
     .text-below-logo {
         padding: 101px;
         text-align: center;
-        margin-top: 90px;
+        margin-top: 94px;
     }
 
     .baixo {
@@ -23,7 +30,6 @@
     footer {
         padding: 8px;
     }
-  }
 
   @media screen and (min-width: 769px) and (max-width: 992px) {
 
