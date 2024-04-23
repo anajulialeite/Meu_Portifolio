@@ -35,3 +35,7 @@ a:hover {
     text-decoration: underline;
     color: white;
 }
+
+.center p {
+    text-align: center;
+}
