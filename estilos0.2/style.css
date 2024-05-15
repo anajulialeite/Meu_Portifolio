@@ -19,7 +19,7 @@ h2 {
     border-radius: 10px 10px 0px 0px;
 }
 
-li {
+ul > li {
     background-color: wheat;
     padding: 10px;
     border-radius: 10px;
