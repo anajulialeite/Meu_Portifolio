@@ -46,6 +46,10 @@ h2 {
     transform: scale(95%);
 }
 
+li {
+    padding: 10px;
+}
+
 a {
     color: #753300;
     text-decoration: none;
