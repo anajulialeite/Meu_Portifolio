@@ -9,4 +9,4 @@ Este é o meu portifólio pessoal e profissional que estarei compartilhando no m
 Usei o validador de HTML para construir o meu portifólio e todas as páginas de forma válidas por ele.
 Link do validador: https://validator.w3.org/
 
-Link do meu projeto:  https://anajulialeite.github.io/Meu_Portifolio/
+ Link do meu projeto:  https://anajulialeite.github.io/Meu_Portifolio/
