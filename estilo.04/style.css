@@ -6,11 +6,11 @@ body {
 }
 
 h1, h2 {
-    color: #753300;
+    color: #400D01;
 }
 
 h2 {
-    background-color: #753300;
+    background-color: #400D01;
     text-align: center;
     font-weight: bold;
     color: #F7954A;
@@ -51,7 +51,7 @@ li {
 }
 
 a {
-    color: #753300;
+    color: #400D01;
     text-decoration: none;
     font-weight: bolder;
 }
@@ -62,7 +62,7 @@ a:hover {
 }
 
 .hover {
-    color: #753300;
+    color: #400D01;
     text-decoration: none;
     font-weight: bolder;
 }
