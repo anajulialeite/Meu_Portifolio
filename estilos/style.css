@@ -21,7 +21,7 @@ header {
 }
 
 .menu {
-    background-color: #753300;
+    background-color: #400D01;
     position: fixed;
     width: 100vw;
     top: 0;
@@ -68,7 +68,7 @@ a:hover {
 }
 
 .site-title {
-    background: linear-gradient(45deg, #FA490B, #FA8E0B, #E45C01, #F0240B);
+    background: linear-gradient(45deg, #FA8E0B, #E45C01, #FA490B, #F0240B, #FA490B);
     background-size: 400% 100%;
     font-size: 4em;
     margin-bottom: 60%;
@@ -95,7 +95,7 @@ a:hover {
 }
 
 footer{
-    background-color: #753300;
+    background-color: #400D01;
     color: #F7954A;
     text-align: center;
     font-size: 0.8em;
