@@ -50,12 +50,18 @@ h1, h2 {
 .lado img {
     position: relative;
     margin-bottom: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
 }
 
 a {
     color: #400D01;
     text-decoration: none;
     font-weight: bolder;
+}
+
+.color p {
+    position: relative;
+    top: -20px
 }
 
 .color p a:hover {
@@ -77,8 +83,8 @@ a {
     .container {
         padding: 0 10px;
     }
-}
 
-.lado img {
-    top: -20px;
+    .lado img {
+        top: -20px;
+    }
 }
