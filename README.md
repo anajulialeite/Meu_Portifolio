@@ -1,6 +1,6 @@
 # Me WebSite
 
-<img src="imagens/Logo.jpg" alt="Logo" align="left" width="160">
+<img src="imagens/Logo.jpg" alt="Logo" align="left" width="170">
 
 Este é o meu portifólio pessoal e profissional que estarei compartilhando no meu Linkedin. Este é mais um projeto para mostrar um pouco mais do meu trabalho. Entre em contato que também faço o seu!
 
