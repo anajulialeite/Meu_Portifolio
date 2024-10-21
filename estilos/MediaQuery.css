@@ -79,17 +79,17 @@ body {
 /* Estilos para telas de 1200px ou mais */
 @media screen and (min-width: 1200px) {
     .center {
-        top: 20%;
+        top: 10%;
     }
     .site-title {
-        font-size: 5em;
-        margin-bottom: 50px;
+        font-size: 3em;
+        margin-bottom: 30px;
     }
     .text-below-logo {
-        margin-top: 50px;
+        margin-top: 30px;
     }
     footer {
-        padding: 20px;
+        padding: 15px;
         font-size: 1em;
     }
 }
