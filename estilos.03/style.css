@@ -50,7 +50,7 @@ h1, h2 {
 .lado img {
     position: relative;
     margin-bottom: 25px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
 }
 
 a {

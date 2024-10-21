@@ -1,14 +1,22 @@
 @charset "UTF-8";
 
+/* Estilos padrão (mobile first) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Mobile (até 480px) */
+body {
+    background-color: #f7954ad0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+/* Estilos para telas entre 481px e 767px */
 @media screen and (min-width: 481px) and (max-width: 767px) {
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow: hidden;
-    }
-
     .site-title {
         margin-top: 160px;
         font-size: 3em;
@@ -16,24 +24,21 @@
     .center img {
         margin-top: 101px;
     }
-
     .text-below-logo {
         padding: 101px;
         text-align: center;
         margin-top: 389px;
     }
-
     .baixo {
         margin-top: 103px;
     }
-
     footer {
         padding: 7px;
     }
 }
 
-  @media screen and (min-width: 768px) and (max-width: 991px) {
-
+/* Estilos para telas entre 768px e 991px */
+@media screen and (min-width: 768px) and (max-width: 991px) {
     .center {
         top: 39%;
     }
@@ -47,10 +52,44 @@
     .text-below-logo {
         margin-top: 100px;
     }
-    
     footer {
         text-align: center;
         font-size: 0.8em;
         padding: 12px;
+    }
+}
+
+/* Estilos para telas entre 992px e 1199px */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .center {
+        top: 25%;
+    }
+    .site-title {
+        font-size: 4.5em;
+        margin-bottom: 100px;
+    }
+    .text-below-logo {
+        margin-top: 80px;
+    }
+    footer {
+        padding: 15px;
+    }
+}
+
+/* Estilos para telas de 1200px ou mais */
+@media screen and (min-width: 1200px) {
+    .center {
+        top: 20%;
+    }
+    .site-title {
+        font-size: 5em;
+        margin-bottom: 50px;
+    }
+    .text-below-logo {
+        margin-top: 50px;
+    }
+    footer {
+        padding: 20px;
+        font-size: 1em;
     }
 }
