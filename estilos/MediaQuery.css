@@ -1,56 +1,79 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 481px) and (max-width: 767px) {
+/* Estilos gerais */
+@media (max-width: 768px) {
+    header {
+        height: auto; /* Permitir que o header se ajuste */
+        flex-direction: column; /* Alinhar elementos verticalmente */
+        text-align: center; /* Centralizar texto */
+    }
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow: hidden;
+    .menu {
+        flex-direction: column; /* Colocar os itens do menu em coluna */
+        position: static; /* Tornar o menu estático */
+    }
+
+    .menu ul {
+        flex-direction: column; /* Alterar a direção para coluna */
+        padding: 0; /* Remover padding */
+    }
+
+    .menu li {
+        margin: 10px 0; /* Espaçamento entre os itens */
     }
 
     .site-title {
-        margin-top: 160px;
-        font-size: 3em;
-    }
-    .center img {
-        margin-top: 101px;
+        font-size: 2.5em; /* Reduzir tamanho da fonte para telas pequenas */
+        margin-bottom: 30%; /* Ajustar margem */
     }
 
     .text-below-logo {
-        padding: 101px;
-        text-align: center;
-        margin-top: 389px;
+        margin-top: 20px; /* Ajustar a margem para a parte de baixo do logo */
     }
 
-    .baixo {
-        margin-top: 103px;
-    }
-
-    footer {
-        padding: 7px;
+    .center {
+        top: 10%; /* Ajustar a posição do logo */
     }
 }
 
-  @media screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 480px) {
+    .site-title {
+        font-size: 2em; /* Reduzir ainda mais para telas muito pequenas */
+    }
+
+    footer {
+        font-size: 0.7em; /* Ajustar tamanho da fonte do rodapé */
+    }
+}
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Colocar os itens do menu em coluna */
+    }
+
+    .menu ul {
+        flex-direction: column; /* Alterar a direção para coluna */
+        padding: 0;
+    }
+
+    .menu li {
+        margin: 10px 0; /* Espaçamento entre os itens */
+    }
+
+    .site-title {
+        font-size: 2.5em; /* Reduzir tamanho da fonte para telas pequenas */
+    }
+
+    .text-below-logo {
+        margin-top: 10px; /* Ajustar a margem para a parte de baixo do logo */
+    }
 
     .center {
-        top: 39%;
+        margin-top: 10%; /* Ajustar a posição do logo */
     }
+}
+
+@media (max-width: 1024px) {
     .site-title {
-        background-size: 400% 100%;
-        font-size: 4em;
-        margin-bottom: 139%;
-        text-transform: uppercase;
-        text-align: center;
-    }
-    .text-below-logo {
-        margin-top: 100px;
-    }
-    
-    footer {
-        text-align: center;
-        font-size: 0.8em;
-        padding: 12px;
+        font-size: 3em; /* Reduzir para telas médias */
     }
 }
