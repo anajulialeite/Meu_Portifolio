@@ -1,51 +1,11 @@
 @charset "UTF-8";
 
-/* Estilos gerais */
-@media (max-width: 768px) {
+/* Media Queries */
+@media (max-width: 600px) {
     header {
-        height: auto; /* Permitir que o header se ajuste */
-        flex-direction: column; /* Alinhar elementos verticalmente */
-        text-align: center; /* Centralizar texto */
+        text-align: center;
     }
 
-    .menu {
-        flex-direction: column; /* Colocar os itens do menu em coluna */
-        position: static; /* Tornar o menu estático */
-    }
-
-    .menu ul {
-        flex-direction: column; /* Alterar a direção para coluna */
-        padding: 0; /* Remover padding */
-    }
-
-    .menu li {
-        margin: 10px 0; /* Espaçamento entre os itens */
-    }
-
-    .site-title {
-        font-size: 2.5em; /* Reduzir tamanho da fonte para telas pequenas */
-        margin-bottom: 30%; /* Ajustar margem */
-    }
-
-    .text-below-logo {
-        margin-top: 20px; /* Ajustar a margem para a parte de baixo do logo */
-    }
-
-    .center {
-        top: 10%; /* Ajustar a posição do logo */
-    }
-}
-
-@media (max-width: 480px) {
-    .site-title {
-        font-size: 2em; /* Reduzir ainda mais para telas muito pequenas */
-    }
-
-    footer {
-        font-size: 0.7em; /* Ajustar tamanho da fonte do rodapé */
-    }
-}
-@media (max-width: 768px) {
     .menu {
         flex-direction: column; /* Colocar os itens do menu em coluna */
     }
@@ -60,20 +20,42 @@
     }
 
     .site-title {
-        font-size: 2.5em; /* Reduzir tamanho da fonte para telas pequenas */
-    }
-
-    .text-below-logo {
-        margin-top: 10px; /* Ajustar a margem para a parte de baixo do logo */
-    }
-
-    .center {
-        margin-top: 10%; /* Ajustar a posição do logo */
+        font-size: 2em; /* Tamanho reduzido */
     }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 768px) {
     .site-title {
-        font-size: 3em; /* Reduzir para telas médias */
+        font-size: 2.5em; /* Tamanho para celulares */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .site-title {
+        font-size: 3em; /* Tamanho para tablets */
+    }
+
+    .menu {
+        flex-direction: row; /* Mantém o menu em linha */
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .site-title {
+        font-size: 3.5em; /* Tamanho para desktops */
+    }
+
+    .menu {
+        justify-content: space-between; /* Distribui menu */
+    }
+}
+
+@media (min-width: 1201px) {
+    .site-title {
+        font-size: 4em; /* Tamanho para grandes telas */
+    }
+
+    .menu {
+        justify-content: flex-end; /* Alinha o menu à direita */
     }
 }
