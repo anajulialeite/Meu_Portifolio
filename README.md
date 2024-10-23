@@ -12,3 +12,7 @@ Usei o validador de HTML para construir o meu portifólio e todas as páginas de
 Link do validador: https://validator.w3.org/
 
  Link do meu projeto:  https://anajulialeite.github.io/Meu_Portifolio/
+
+ # License
+
+ [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
