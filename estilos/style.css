@@ -4,13 +4,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
 }
 
 body {
     background-color: #f7954ad0;
+    display: flex;
+    flex-direction: column;
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
+    min-height: 100vh;
 }
 
 header {
@@ -61,7 +63,7 @@ a:hover {
 .baixo {
     position: relative;
     display: inline-block;
-    margin-bottom: 5px;
+    padding: 0px;
 }
 
 .text-below-logo {
@@ -73,7 +75,7 @@ a:hover {
     background: linear-gradient(45deg, #FA8E0B, #E45C01, #FA490B, #F0240B, #FA490B);
     background-size: 400% 100%;
     font-size: 4em;
-    margin-bottom: 60%;
+    margin-bottom: 50%;
     text-transform: uppercase;
     text-align: center;
     animation: degrade 10s linear infinite alternate;

@@ -4,12 +4,13 @@
     
     header {
         height: auto; 
-        padding: 20px 0; 
+        padding: 20px 0;
+        overflow: hidden;
     }
 
     .site-title {
         font-size: 3.5em; 
-        padding: 20px;
+        padding: 30px;
         margin-bottom: 30%; 
     }
 
@@ -25,11 +26,12 @@
     }
 
     .baixo {
-        margin-bottom: 100px !important;
+        margin: 50px;
+        padding: 50px;
     }
 
     .text-below-logo {
-        margin-top: 30px; 
+        margin-top: 10px; 
     }
 
     footer {
