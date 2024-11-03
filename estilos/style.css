@@ -60,6 +60,8 @@ a:hover {
 
 .baixo {
     position: relative;
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
 .text-below-logo {

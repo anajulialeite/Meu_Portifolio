@@ -1,56 +1,46 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow: hidden;
+@media (max-width: 768px) {
+    
+    header {
+        height: auto; /* Ajusta a altura para caber no conteúdo */
+        padding: 20px 0; /* Adiciona padding */
     }
 
     .site-title {
-        margin-top: 160px;
-        font-size: 3em;
-    }
-    .center img {
-        margin-top: 101px;
+        font-size: 3.5em; /* Reduz o tamanho da fonte */
+        padding: 20px;
+        margin-bottom: 30%; /* Ajusta a margem */
     }
 
-    .text-below-logo {
-        padding: 101px;
-        text-align: center;
-        margin-top: 389px;
+    .menu ul {
+        flex-direction: row; /* Muda a direção para coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .menu a {
+        padding: 15px; /* Aumenta o padding para facilitar o toque */
+        width: 100%; /* Faz os links ocuparem toda a largura */
+        text-align: center; /* Centraliza o texto */
     }
 
     .baixo {
-        margin-top: 103px;
+        margin-bottom: 100px !important;
     }
 
-    footer {
-        padding: 7px;
-    }
-}
-
-  @media screen and (min-width: 769px) and (max-width: 992px) {
-
-    .center {
-        top: 39%;
-    }
-    .site-title {
-        background-size: 400% 100%;
-        font-size: 4em;
-        margin-bottom: 139%;
-        text-transform: uppercase;
-        text-align: center;
-    }
     .text-below-logo {
-        margin-top: 100px;
+        margin-top: 30px; /* Ajusta a margem */
     }
-    
+
     footer {
-        text-align: center;
-        font-size: 0.8em;
-        padding: 12px;
+        position: fixed;
+        bottom: 0; /* Coloca o footer na parte inferior da tela */
+        left: 0; /* Alinha o footer à esquerda */
+        right: 0; /* Alinha o footer à direita */
+        background-color: #400D01; /* Cor de fundo */
+        color: #F7954A; /* Cor do texto */
+        text-align: center; /* Centraliza o texto */
+        padding: 10px; /* Espaçamento interno */
+        font-size: 0.8em; /* Tamanho da fonte */
     }
 }
