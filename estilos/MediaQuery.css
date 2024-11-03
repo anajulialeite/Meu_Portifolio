@@ -3,25 +3,25 @@
 @media (max-width: 768px) {
     
     header {
-        height: auto; /* Ajusta a altura para caber no conteúdo */
-        padding: 20px 0; /* Adiciona padding */
+        height: auto; 
+        padding: 20px 0; 
     }
 
     .site-title {
-        font-size: 3.5em; /* Reduz o tamanho da fonte */
+        font-size: 3.5em; 
         padding: 20px;
-        margin-bottom: 30%; /* Ajusta a margem */
+        margin-bottom: 30%; 
     }
 
     .menu ul {
-        flex-direction: row; /* Muda a direção para coluna */
-        align-items: center; /* Centraliza os itens */
+        flex-direction: row; 
+        align-items: center; 
     }
 
     .menu a {
-        padding: 15px; /* Aumenta o padding para facilitar o toque */
-        width: 100%; /* Faz os links ocuparem toda a largura */
-        text-align: center; /* Centraliza o texto */
+        padding: 15px; 
+        width: 100%; 
+        text-align: center; 
     }
 
     .baixo {
@@ -29,18 +29,18 @@
     }
 
     .text-below-logo {
-        margin-top: 30px; /* Ajusta a margem */
+        margin-top: 30px; 
     }
 
     footer {
         position: fixed;
-        bottom: 0; /* Coloca o footer na parte inferior da tela */
-        left: 0; /* Alinha o footer à esquerda */
-        right: 0; /* Alinha o footer à direita */
-        background-color: #400D01; /* Cor de fundo */
-        color: #F7954A; /* Cor do texto */
-        text-align: center; /* Centraliza o texto */
-        padding: 10px; /* Espaçamento interno */
-        font-size: 0.8em; /* Tamanho da fonte */
+        bottom: 0; 
+        left: 0;
+        right: 0; 
+        background-color: #400D01; 
+        color: #F7954A; 
+        text-align: center; 
+        padding: 10px; 
+        font-size: 0.8em; 
     }
 }
