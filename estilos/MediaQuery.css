@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+    
+    body {
+        overflow: hidden;
+    }
     
     header {
         height: auto; 
@@ -16,7 +20,8 @@
 
     .menu ul {
         flex-direction: row; 
-        align-items: center; 
+        align-items: center;
+        height: 40px;
     }
 
     .menu a {
@@ -26,8 +31,8 @@
     }
 
     .baixo {
-        margin: 50px;
-        padding: 50px;
+        margin: 30px;
+        padding: 30px;
     }
 
     .text-below-logo {
@@ -42,7 +47,8 @@
         background-color: #400D01; 
         color: #F7954A; 
         text-align: center; 
-        padding: 10px; 
-        font-size: 0.8em; 
+        padding: 8px; 
+        font-size: 0.8em;
+        height: 30px;
     }
 }
