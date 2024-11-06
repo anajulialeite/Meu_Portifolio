@@ -11,8 +11,6 @@ O site foi totalmente construído com a linguagem de marcação HTML5 e com folh
 Usei o validador de HTML para construir o meu portifólio e todas as páginas de forma válidas por ele.
 Link do validador: https://validator.w3.org/
 
- Link do meu projeto:  https://anajulialeite.github.io/Meu_Portifolio/
+# License
 
- # License
-
- [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
