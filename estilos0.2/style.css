@@ -20,16 +20,37 @@ h2 {
     border-radius: 10px 10px 0px 0px;
 }
 
-aside {
-    background-color: #F5DEB3;
-    padding: 10px;
-    border-radius: 0px 0px 10px 10px;
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.308);
-    margin: -10px 0px 0px 0px;
+.habilidade {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
 }
 
-li {
-    padding: 10px;
+
+.progress-bar {
+    background: #eee;
+    border-radius: 5px;
+    height: 20px;
+    margin-left: 10px;
+    flex: 1;
+}
+
+.progress {
+    background: #ff6600;
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.5s;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+p {
+    margin-top: 20px; 
+    display: inline-block; 
 }
 
 a {
