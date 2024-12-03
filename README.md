@@ -6,6 +6,8 @@ Este é o meu portifólio pessoal e profissional que estarei compartilhando no m
 
 <a href="https://wa.me/+55061996773513" target="_blank"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" target="_blank"></a>
 
+Link do meu projeto: https://anajulialeite.github.io/Meu_Portifolio/
+
 O site foi totalmente construído com a linguagem de marcação HTML5 e com folhas de estilização no CSS3.
  
 Usei o validador de HTML para construir o meu portifólio e todas as páginas de forma válidas por ele.
