@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 992px) {
     
     body {
         overflow: hidden;
@@ -31,8 +31,9 @@
     }
 
     .baixo {
-        margin: 30px;
-        padding: 30px;
+        position: relative;
+        margin: 147px;
+        padding: 147px;
     }
 
     .text-below-logo {

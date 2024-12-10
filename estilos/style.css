@@ -13,6 +13,8 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
     min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 header {
