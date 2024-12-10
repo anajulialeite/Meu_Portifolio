@@ -13,9 +13,9 @@
     }
 
     .site-title {
-        font-size: 3.5em; 
+        font-size: 2.5em; 
         padding: 30px;
-        margin-bottom: 30%; 
+        margin-bottom: 20vh; 
     }
 
     .menu ul {
@@ -32,8 +32,8 @@
 
     .baixo {
         position: relative;
-        margin: 80px;
-        padding: 80px;
+        margin: 95px;
+        padding: 95px;
     }
 
     .text-below-logo {
@@ -48,7 +48,7 @@
         background-color: #400D01; 
         color: #F7954A; 
         text-align: center; 
-        padding: 8px; 
+        padding: 7px; 
         font-size: 0.8em;
         height: 30px;
     }
