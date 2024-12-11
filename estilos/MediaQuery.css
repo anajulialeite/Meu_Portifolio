@@ -54,3 +54,17 @@
         height: 30px;
     }
 }
+
+
+
+.baixo {
+    position: relative;
+    display: inline-block;
+    padding: 0px;
+}
+
+.site-title {
+    font-size: 3.5em; 
+    padding: 30px;
+    margin-bottom: 30%; 
+}
