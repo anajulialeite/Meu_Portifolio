@@ -62,11 +62,6 @@ a:hover {
     transform: translate(-50%);
 }
 
-.baixo {
-    position: relative;
-    display: inline-block;
-    padding: 0px;
-}
 
 .text-below-logo {
     text-align: center;
@@ -81,10 +76,14 @@ a:hover {
     text-transform: uppercase;
     text-align: center;
     animation: degrade 10s linear infinite alternate;
+    padding-bottom: 0px;
+    margin-bottom: 25px;
+
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 
 @keyframes degrade {
     0%{
