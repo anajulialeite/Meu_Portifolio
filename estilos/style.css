@@ -26,7 +26,11 @@ header {
 
 .menu {
     background-color: #400D01;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
     position: fixed;
+    margin: 0;
     width: 100vw;
     top: 0;
 }
@@ -37,7 +41,8 @@ header {
 }
 
 .menu li {
-    list-style: none;
+    align-items: center;
+    display: flex;
 }
 
 .menu a {
@@ -53,6 +58,11 @@ a {
 a:hover {
     text-decoration: underline;
     color: white;
+}
+
+.centered {
+    display: block;
+    text-align: center;
 }
 
 .center {

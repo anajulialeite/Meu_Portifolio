@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background-color: #f7954ad0;
+    background-color: rgb(236, 172, 236);
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -15,21 +15,25 @@ body {
 }
 
 h1, h2 {
-    color: #400D01;
+    color: white;
+}
+
+h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.801);
 }
 
 h2 {
-    background-color: #400D01;
+    background-color: #9a4993;
     text-align: center;
     font-weight: bold;
-    color: #f7954ad0;
+    color: white;
     padding: 10px;
     margin: -10px -0px 0px -0px;
     border-radius: 10px 10px 0px 0px;
 }
 
 .lista_link {
-    background-color: #F5DEB3;
+    background-color: white;
     padding: 10px;
     border-radius: 0px 0px 20px 20px ;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.288);
@@ -45,7 +49,7 @@ h2 {
 }
 
 .lista_link img:hover {
-    border: 3px solid #ff6600;
+    border: 3px solid purple;
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.774);
     transition: transform 0.5s, border 0.3s;
@@ -60,14 +64,15 @@ li {
 }
 
 a {
-    color: #400D01;
+    color: white;
     text-decoration: none;
     font-weight: bolder;
+    text-shadow:  2px 2px 4px rgba(0, 0, 0, 0.801);
 }
 
 a:hover {
     text-decoration: underline;
-    color: #F56A00;
+    color: purple;
 }
 
 .hover {
@@ -77,5 +82,5 @@ a:hover {
 }
 
 .hover a:hover {
-    color: white;
+    color: rgb(97, 5, 97);
 }
