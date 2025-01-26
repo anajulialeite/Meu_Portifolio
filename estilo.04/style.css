@@ -36,7 +36,7 @@ h2 {
 }
 
 .lista_link img:hover {
-    border: 3px solid #ff6600;
+    border: 3px solid orangered;
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.774);
     transition: transform 0.5s, border 0.3s;
@@ -58,7 +58,7 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color: #ff6600;
+    color: orangered;
 }
 
 .hover {
