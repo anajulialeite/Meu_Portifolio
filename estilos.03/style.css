@@ -13,13 +13,6 @@ h1, h2 {
     color: #400D01;
 }
 
-.container {
-    position: relative; 
-    max-width: 1000px; 
-    margin: 0 auto; 
-    padding: 0 20px;
-}
-
 .work_container img {
     height: 50px;
     margin: 10px;
