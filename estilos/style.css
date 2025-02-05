@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #f7954ad0;
+    background-color: #f7ddc9;
     display: flex;
     flex-direction: column;
     font-family: 'Times New Roman', Times, serif;
@@ -25,7 +25,7 @@ header {
 }
 
 .menu {
-    background-color: #400D01;
+    background-color: #fe6601;
     justify-content: center;
     list-style: none;
     padding: 0;
@@ -51,7 +51,7 @@ header {
 }
 
 a {
-    color: #f7954ad0;
+    color: #f7cdaf;
     text-decoration: none;
 }
 
@@ -65,17 +65,18 @@ a:hover {
     text-align: center;
 }
 
-.center {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%);
+.text-below-logo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 200px;
 }
 
-
-.text-below-logo {
+.baixo {
+    display: flex;
     text-align: center;
-    margin-top: 90px;
+    justify-content: center;
+    margin-top: 327px;
 }
 
 .site-title {
@@ -111,7 +112,7 @@ a:hover {
 
 footer{
     background-color: #400D01;
-    color: #F7954A;
+    color: #f7cdaf;
     text-align: center;
     font-size: 0.8em;
     padding: 5px;
@@ -119,12 +120,12 @@ footer{
   }
   
   footer a{
-    color: #F7954A;
+    color: #f7cdaf;
     font-weight: bolder;
     text-decoration: none;
   }
   
   footer a:hover{
     text-decoration: underline;
-    color: orangered;
+    color: white;
   }
