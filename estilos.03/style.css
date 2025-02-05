@@ -44,6 +44,7 @@ h1, h2 {
     position: relative;
     margin-bottom: 25px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+    border-radius: 15px;
 }
 
 a {
@@ -80,4 +81,30 @@ a {
     .lado img {
         top: -20px;
     }
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.centro {
+    animation: spin 5s linear infinite; /*Gira a logo em 5 segundos infinitamente*/
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.lado {
+    opacity: 0; /*Começa invisível*/
+    animation: fadeInUp 1s ease-out forwards;
 }
