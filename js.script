@@ -1,0 +1,24 @@
+document.addEventListener("DOMContentLoaded", function () {
+    // Seleciona todos os itens da lista
+    const items = document.querySelectorAll(".lista_link ul li");
+
+    // Função que será chamada para mostrar os itens conforme o usuário rola a página
+    function showItemsOnScroll() {
+        items.forEach(item => {
+            // Pega a posição do item na tela
+            const itemTop = item.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            // Se o item estiver visível na janela (90% da altura da tela), adiciona a classe "show"
+            if (itemTop < windowHeight * 0.9) {
+                item.classList.add("show");
+            }
+        });
+    }
+
+    // Chama a função imediatamente para verificar itens visíveis ao carregar a página
+    showItemsOnScroll();
+
+    // Adiciona o evento de scroll para disparar a função quando o usuário rolar a página
+    window.addEventListener("scroll", showItemsOnScroll);
+});
