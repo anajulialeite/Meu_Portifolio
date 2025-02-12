@@ -8,9 +8,10 @@ Este é o meu portifólio pessoal e profissional que estarei compartilhando no m
 
 Link do meu projeto: https://anajulialeite.github.io/Meu_Portifolio/
 
-O site foi totalmente construído com a linguagem de marcação HTML5 e com folhas de estilização no CSS3.
+O site foi totalmente construído com a linguagem de marcação HTML5, com folhas de estilização no CSS3 e com alguns efeitos de animação feitos em JavaScrip.
  
 Usei o validador de HTML para construir o meu portifólio e todas as páginas de forma válidas por ele.
+<br>
 Link do validador: https://validator.w3.org/
 
 # License
