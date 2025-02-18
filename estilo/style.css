@@ -20,8 +20,19 @@ main {
     text-align: center;
 }
 
+.img-fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .img-fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }  
+
 h1 {
-    color: #400D01;
+    color: #fe6601;
     text-align: center;
 }
 
@@ -33,7 +44,7 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color: orangered;
+    color: #fe6601;
 }
 
 .center p {
