@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background-color: rgb(236, 172, 236);
+    background-color: rgb(228, 202, 228);
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -12,6 +12,19 @@ body {
     align-items: center; /* Alinha os itens horizontalmente no centro */
     justify-content: center;
     gap: 5px; /* Controla o espaçamento entre a imagem e os títulos */
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.center {
+    animation: girar 4s linear infinite;
 }
 
 h1, h2 {
