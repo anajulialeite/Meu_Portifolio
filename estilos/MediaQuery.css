@@ -1,70 +1,112 @@
 @charset "UTF-8";
 
 @media (min-width: 320px) and (max-width: 768px) {
-    
     body {
         overflow: hidden;
     }
-    
+
     header {
-        height: auto; 
-        padding: 20px 0;
+        height: auto;
+        padding: 10px 0;
         overflow: hidden;
+        position: relative;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-hamburguer {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1000;
+    }
+
+    .nav-menu-hamburguer {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #fe6601;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-menu-hamburguer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-menu-hamburguer li {
+        padding: 10px 20px;
+    }
+
+    .nav-menu-hamburguer a {
+        color: #f7cdaf;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+
+    .nav-menu-hamburguer a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+
+    .nav-menu-hamburguer.active {
+        display: flex;
+    }
+
+    main {
+        margin-top: 60px;
     }
 
     .site-title {
-        font-size: 2.5em; 
+        font-size: 2.5em;
         padding: 30px;
-        margin-bottom: 20vh; 
-    }
-
-    .menu ul {
-        flex-direction: row; 
-        align-items: center;
-        height: 40px;
-    }
-
-    .menu a {
-        padding: 15px; 
-        width: 100%; 
-        text-align: center; 
-        font-size: 0.8em;
-    }
-
-    .baixo {
-        position: relative;
-        margin: 95px;
-        padding: 40px;
-    }
-
-    .text-below-logo {
-        margin-top: 10px; 
+        margin-bottom: 20vh;
     }
 
     footer {
         position: fixed;
-        bottom: 0; 
+        bottom: 0;
         left: 0;
-        right: 0; 
-        background-color: #400D01; 
-        color: #F7954A; 
-        text-align: center; 
-        padding: 7px; 
+        right: 0;
+        background-color: #400D01;
+        color: #F7954A;
+        text-align: center;
+        padding: 7px;
         font-size: 0.8em;
         height: 30px;
     }
 }
 
+/* Estilos para telas menores que 769px */
+@media (max-width: 768px) {
+    .site-title {
+        font-size: 2em; /* Reduz o tamanho da fonte do título */
+        margin-bottom: 10vh; /* Ajusta a margem inferior */
+    }
 
+    main {
+        padding: 20px; /* Adiciona padding ao main */
+    }
 
-.baixo {
-    position: relative;
-    display: inline-block;
-    padding: 0px;
+    /* Outros ajustes conforme necessário */
 }
 
-.site-title {
-    font-size: 3.5em; 
-    padding: 30px;
-    margin-bottom: 30%; 
+/* Estilos para telas ainda menores */
+@media (max-width: 480px) {
+    .site-title {
+        font-size: 1.5em; /* Reduz ainda mais o tamanho da fonte */
+        margin-bottom: 5vh; /* Ajusta ainda mais a margem */
+    }
+
+    /* Ajuste de outros elementos aqui */
 }

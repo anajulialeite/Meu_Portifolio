@@ -14,14 +14,15 @@ body {
     font-size: 18px;
     min-height: 100vh;
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 header {
-    height: 96vh;
+    height: auto; /* Alterado para auto */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between; /* Espaçamento entre logo e menu */
+    align-items: center; /* Alinhamento vertical */
+    padding: 10px 20px; /* Adicionado padding */
+    position: relative; /* Adicionado para posicionar o menu hambúrguer */
 }
 
 .menu {
@@ -29,15 +30,16 @@ header {
     justify-content: center;
     list-style: none;
     padding: 0;
-    position: fixed;
     margin: 0;
-    width: 100vw;
-    top: 0;
+    display: flex; /* Alterado para flex */
+    align-items: center; /* Alinhamento vertical */
 }
 
 .menu ul {
     display: flex;
     justify-content: space-around;
+    margin: 0;
+    padding: 0;
 }
 
 .menu li {
@@ -65,36 +67,27 @@ a:hover {
     text-align: center;
 }
 
-.text-below-logo {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 200px;
-}
-
-.baixo {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin-top: 327px;
+main {
+    flex: 1; /* Para ocupar o espaço restante */
+    display: flex; /* Adicionado para centralizar o conteúdo */
+    flex-direction: column; /* Organizar em coluna */
+    justify-content: center; /* Centralizar verticalmente */
+    align-items: center; /* Centralizar horizontalmente */
+    margin-top: 100px;
 }
 
 .site-title {
     background: linear-gradient(45deg, #FA8E0B, #E45C01, #FA490B, #F0240B, #FA490B);
     background-size: 400% 100%;
     font-size: 4em;
-    margin-bottom: 50%;
     text-transform: uppercase;
     text-align: center;
     animation: degrade 10s linear infinite alternate;
     padding-bottom: 0px;
     margin-bottom: 25px;
-
-
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 
 @keyframes degrade {
     0%{
@@ -116,16 +109,18 @@ footer{
     text-align: center;
     font-size: 0.8em;
     padding: 5px;
-    position: relative;
-  }
-  
-  footer a{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a{
     color: #f7cdaf;
     font-weight: bolder;
     text-decoration: none;
-  }
-  
-  footer a:hover{
+}
+
+footer a:hover{
     text-decoration: underline;
     color: white;
-  }
+}
