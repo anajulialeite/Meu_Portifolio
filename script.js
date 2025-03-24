@@ -7,3 +7,15 @@ function rotateCentro() {
 }
 
 setInterval(rotateCentro, 10); //Gira a logo a cada 10 milisegndos
+
+// script.js
+
+const menuHamburguer = document.querySelector(".menu-hamburguer");
+const navMenu = document.querySelector(".nav-menu");
+
+if (menuHamburguer && navMenu) {
+    menuHamburguer.addEventListener("click", () => {
+        menuHamburguer.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    });
+}

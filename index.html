@@ -1,34 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portifólio</title>
     <link rel="shortcut icon" href="imagens/Logo-AJ-Criar-e-Desenvolver-_2024-03_.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css" media="all">
-    <link rel="stylesheet" href="estilos/MediaQuery.css">
-</head>
+    <link rel="stylesheet" href="estilos/menu.css"> </head>
+    <link rel="stylesheet" href="estilos/MediaQuery.css"> </head>
+
 <body>
     <header>
-        <nav class="menu">
-            <ul>
+        <div class="container-navbar">
+            <div class="logo">
                 <img src="imagens/menu.jpg" alt="Logo">
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="Sobre.html">Sobre</a></li>
+                    <li><a href="Habilidades.html">Habilidades</a></li>
+                    <li><a href="C%23.html"><span class="centered">C#</span>(Back-End)</a></li>
+                    <li><a href="Front-End.html">Front-End</a></li>
+                    <li><a href="Contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="menu-hamburguer">  <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <nav class="nav-menu">  <ul>
                 <li><a href="Sobre.html">Sobre</a></li>
                 <li><a href="Habilidades.html">Habilidades</a></li>
                 <li><a href="C%23.html"><span class="centered">C#</span>(Back-End)</a></li>
                 <li><a href="Front-End.html">Front-End</a></li>
                 <li><a href="Contato.html">Contato</a></li>
-            </ul>  
+            </ul>
         </nav>
+    </header>
+    <main>
         <div class="text-below-logo">
             <h3 class="site-title">Ana Júlia Leite</h3>
         </div>
-            <div class="baixo">
-                <img src="imagens/index.png" alt="foto">
-            </div>
-    </header>
+        <div class="baixo">
+            <img src="imagens/index.png" alt="foto">
+        </div>
+    </main>
     <footer>
-        <p>Site criado por: <a href="https://github.com/anajulialeite">Ana Júlia de Lima Aguiar Leite</a>
+        <p>Site criado por: <a href="https://github.com/anajulialeite">Ana Júlia de Lima Aguiar Leite</a></p>
     </footer>
-</body>
+
+    <script src="script.js"></script>  </body>
+
 </html>
