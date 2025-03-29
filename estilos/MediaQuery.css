@@ -65,13 +65,20 @@
 
     main {
         margin-top: 60px;
+        flex-direction: column;
     }
 
     .site-title {
         font-size: 2.5em;
-        padding: 30px;
-        margin-bottom: 20vh;
+        padding: 10px;
+        margin-bottom: 10vh;
     }
+
+    .text-below-logo {
+        margin: 0;
+        padding: 0;
+    }
+    
 
     footer {
         position: fixed;
@@ -90,15 +97,15 @@
 /* Estilos para telas menores que 769px */
 @media (max-width: 768px) {
     .site-title {
-        font-size: 2em; /* Reduz o tamanho da fonte do título */
-        margin-bottom: 10vh; /* Ajusta a margem inferior */
+        font-size: 2.1em; /* Reduz o tamanho da fonte do título */
+        margin-bottom: 0; 
     }
 
     main {
         padding: 20px; /* Adiciona padding ao main */
     }
 
-    /* Outros ajustes conforme necessário */
+
 }
 
 /* Estilos para telas ainda menores */

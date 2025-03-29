@@ -69,12 +69,14 @@ a:hover {
 
 main {
     flex: 1; /* Para ocupar o espaço restante */
-    display: flex; /* Adicionado para centralizar o conteúdo */
-    flex-direction: column; /* Organizar em coluna */
-    justify-content: center; /* Centralizar verticalmente */
+    display: inline-flex; /* Adicionado para centralizar o conteúdo */
+    flex-direction: rom; /* Organizar em coluna */
+    justify-content: space-evenly; /* Centralizar verticalmente */
     align-items: center; /* Centralizar horizontalmente */
     margin-top: 100px;
+    padding-bottom: 0;
 }
+
 
 .site-title {
     background: linear-gradient(45deg, #FA8E0B, #E45C01, #FA490B, #F0240B, #FA490B);
@@ -88,6 +90,11 @@ main {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.baixo img {
+    margin-top: 88px;
+}
+
 
 @keyframes degrade {
     0%{
