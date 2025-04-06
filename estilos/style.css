@@ -14,6 +14,7 @@ body {
     font-size: 18px;
     min-height: 100vh;
     overflow-x: hidden;
+    overflow: hidden;
 }
 
 header {
@@ -92,8 +93,8 @@ main {
 }
 
 .baixo img {
-    margin-top: 188px;
-    width: 450px;
+    margin-top: 128px;
+    width: 400px;
 }
 
 
