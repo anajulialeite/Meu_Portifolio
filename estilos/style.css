@@ -78,6 +78,10 @@ main {
     padding-bottom: 0;
 }
 
+.text-below-logo .site-title {
+    margin-bottom: 140px;
+}
+
 
 .site-title {
     background: linear-gradient(45deg, #FA8E0B, #E45C01, #FA490B, #F0240B, #FA490B);
