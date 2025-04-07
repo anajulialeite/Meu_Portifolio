@@ -1,123 +1,120 @@
 @charset "UTF-8";
 
 @media (min-width: 320px) and (max-width: 768px) {
-    body {
-        overflow: hidden;
-    }
+  body {
+    overflow: hidden;
+  }
 
-    header {
-        height: auto;
-        padding: 10px 0;
-        overflow: hidden;
-        position: relative;
-    }
+  header {
+    height: auto;
+    padding: 10px 0;
+    overflow: hidden;
+    position: relative;
+  }
 
-    .menu {
-        display: none;
-    }
+  .menu {
+    display: none;
+  }
 
-    .menu-hamburguer {
-        display: block;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        z-index: 1000;
-    }
+  .menu-hamburguer {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+  }
 
-    .nav-menu-hamburguer {
-        display: none;
-        position: fixed;
-        top: 0;
-        right: 0;
-        background-color: #fe6601;
-        width: 100%;
-        height: 100%;
-        z-index: 999;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .nav-menu-hamburguer {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fe6601;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .nav-menu-hamburguer ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
+  .nav-menu-hamburguer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 
-    .nav-menu-hamburguer li {
-        padding: 10px 20px;
-    }
+  .nav-menu-hamburguer li {
+    padding: 10px 20px;
+  }
 
-    .nav-menu-hamburguer a {
-        color: #f7cdaf;
-        text-decoration: none;
-        font-size: 1.2em;
-    }
+  .nav-menu-hamburguer a {
+    color: #f7cdaf;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
 
-    .nav-menu-hamburguer a:hover {
-        color: white;
-        text-decoration: underline;
-    }
+  .nav-menu-hamburguer a:hover {
+    color: white;
+    text-decoration: underline;
+  }
 
-    .nav-menu-hamburguer.active {
-        display: flex;
-    }
+  .nav-menu-hamburguer.active {
+    display: flex;
+  }
 
-    main {
-        max-height: 100%;
-        margin-top: 60px;
-        flex-direction: column;
-    }
+  main {
+    max-height: 100%;
+    margin-top: 90px;
+    flex-direction: column;
+  }
 
-    .text-below-logo .site-title {
-        font-size: 2.5em;
-    }
+  .text-below-logo .site-title {
+    font-size: 2.5em;
+  }
 
-    .text-below-logo {
-        margin-top: 10px;
-        padding: 0;
-    }
+  .text-below-logo {
+    margin-top: 10px;
+    padding: 0;
+  }
 
-    .baixo img {
-        margin-top: 90px;
-        width: auto;
-    }
-    
+  .baixo img {
+    margin-top: 90px;
+    width: auto;
+  }
 
-    footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: #400D01;
-        color: #F7954A;
-        text-align: center;
-        padding: 7px;
-        font-size: 0.8em;
-        height: 30px;
-    }
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #400d01;
+    color: #f7954a;
+    text-align: center;
+    padding: 7px;
+    font-size: 0.8em;
+    height: 30px;
+  }
 }
 
 /* Estilos para telas menores que 769px */
 @media (max-width: 768px) {
-    .site-title {
-        font-size: 2.1em; /* Reduz o tamanho da fonte do título */
-        margin-bottom: 0; 
-    }
+  .site-title {
+    font-size: 2.1em; /* Reduz o tamanho da fonte do título */
+    margin-bottom: 0;
+  }
 
-    main {
-        padding: 20px; /* Adiciona padding ao main */
-    }
-
-
+  main {
+    padding: 20px; /* Adiciona padding ao main */
+  }
 }
 
 /* Estilos para telas ainda menores */
 @media (max-width: 480px) {
-    .site-title {
-        font-size: 1.5em; /* Reduz ainda mais o tamanho da fonte */
-        margin-bottom: 5vh; /* Ajusta ainda mais a margem */
-    }
+  .site-title {
+    font-size: 1.5em; /* Reduz ainda mais o tamanho da fonte */
+    margin-bottom: 5vh; /* Ajusta ainda mais a margem */
+  }
 
-    /* Ajuste de outros elementos aqui */
+  /* Ajuste de outros elementos aqui */
 }
