@@ -90,14 +90,14 @@ main {
     text-transform: uppercase;
     text-align: center;
     animation: degrade 10s linear infinite alternate;
-    padding-bottom: 0px;
+    padding-bottom: 200px;
     margin-bottom: 25px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .baixo img {
-    margin-top: 128px;
+    margin-top: 18px;
     width: 400px;
 }
 

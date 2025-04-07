@@ -3,10 +3,9 @@
 @media (min-width: 320px) and (max-width: 768px) {
   body {
     overflow: hidden;
-    overflow-x: hidden;
-    overflow: hidden;
-}
+    
   }
+  
 
   header {
     height: auto;
@@ -74,11 +73,18 @@
 
   .text-below-logo .site-title {
     font-size: 2.5em;
+    margin-bottom: 95px;
   }
+
 
   .text-below-logo {
     margin-top: 10px;
     padding: 0;
+  }
+
+  .site-title {
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   .baixo img {
@@ -117,6 +123,4 @@
     font-size: 1.5em; /* Reduz ainda mais o tamanho da fonte */
     margin-bottom: 5vh; /* Ajusta ainda mais a margem */
   }
-
-  /* Ajuste de outros elementos aqui */
 }
