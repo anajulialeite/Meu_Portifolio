@@ -3,6 +3,9 @@
 @media (min-width: 320px) and (max-width: 768px) {
   body {
     overflow: hidden;
+    overflow-x: hidden;
+    overflow: hidden;
+}
   }
 
   header {
@@ -79,10 +82,9 @@
   }
 
   .baixo img {
-    margin-top: 90px;
-    width: auto;
-  }
-
+    margin-top: 80px;
+    width: 300px;
+}
   footer {
     position: fixed;
     bottom: 0;
