@@ -76,6 +76,22 @@ li {
     padding: 10px;
 }
 
+.image {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.image img {
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.781);
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image img:hover {
+    transform: translateY(-5px); /* Sobe 5px */
+}
+
 a {
     color: white;
     text-decoration: none;
