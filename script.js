@@ -8,7 +8,6 @@ let rotation = 0;
 
 setInterval(rotateCentro, 10); //Gira a logo a cada 10 milisegndos
 */
-// script.js
 
 const menuHamburguer = document.querySelector(".menu-hamburguer");
 const navMenu = document.querySelector(".nav-menu");
@@ -18,4 +17,13 @@ if (menuHamburguer && navMenu) {
         menuHamburguer.classList.toggle("active");
         navMenu.classList.toggle("active");
     });
+}
+
+// Google Translate
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'pt',
+        includedLanguages: 'en,pt',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
 }
