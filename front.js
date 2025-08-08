@@ -1,16 +1,23 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const progressBars = document.querySelectorAll(".progress");
+document.addEventListener("DOMContentLoaded", function () {
+    // 1. Seleciona todos os itens da lista
+    const items = document.querySelectorAll(".lista_link ul li");
 
-    progressBars.forEach(bar => {
-        const percentage = bar.getAttribute("data-percentage");
+    function showItemsOnScroll() {
+        items.forEach(item => {
+            const itemTop = item.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
 
-        setTimeout(() => {
-            bar.style.width = percentage; // Anima cada barra individualmente
-        }, 300);
-    });
-});
+            if (itemTop < windowHeight * 0.9) {
+                item.classList.add("show");
+            }
+        });
+    }
 
-// Google Translate
+    showItemsOnScroll(); // Executa ao carregar
+
+    window.addEventListener("scroll", showItemsOnScroll);
+
+    // Google Translate
     const script = document.createElement("script");
     script.type = "text/javascript";
     script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
@@ -23,8 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
             layout: google.translate.TranslateElement.InlineLayout.SIMPLE
         }, 'google_translate_element');
     };
+});
 
-    // Ajustar posição do GitHub Corner
+// Ajustar posição do GitHub Corner
 function ajustarGitHubCorner() {
     const githubCorner = document.getElementById("githubCorner");
 
