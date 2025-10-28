@@ -14,7 +14,7 @@ Usei o validador de HTML para construir o meu portifólio e todas as páginas de
 
 ## Demonstração
 
-
+<img src="imagens/portifolio.png" alt="Portifolio" align="center" width="300"/>
 
 ## Links úteis
 
