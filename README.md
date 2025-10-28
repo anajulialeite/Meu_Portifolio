@@ -8,14 +8,18 @@ Este é o meu portifólio pessoal e profissional que estarei compartilhando no m
    <img src="https://img.shields.io/badge/WhatsApp-%231C003F?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"/>
 </a>
 
-Link do meu projeto: https://anajulialeite.github.io/Meu_Portifolio/
-
 O site foi totalmente construído com a linguagem de marcação HTML5, com folhas de estilização no CSS3 e com alguns efeitos de animação feitos em JavaScrip.
  
 Usei o validador de HTML para construir o meu portifólio e todas as páginas de forma válidas por ele.
 <br>
 Link do validador: https://validator.w3.org/
 
-# License
+## Links úteis
+
+Link do meu projeto: https://anajulialeite.github.io/Meu_Portifolio/
+
+Link do validador: https://validator.w3.org/
+
+## License
 
 [![MIT License](https://img.shields.io/badge/License-MIT-%231C003F.svg)](./LICENSE)
