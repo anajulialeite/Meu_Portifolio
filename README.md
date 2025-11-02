@@ -20,7 +20,7 @@ Usei o validador de HTML para construir o meu portifólio e todas as páginas de
 
 Este é o link do meu projeto <a href= "https://anajulialeite.github.io/Meu_Portifolio/">Portifolio WebSite</a>
 
-Link do <a href= "https://validator.w3.org/">validador</a>
+Link do <a href= "https://validator.w3.org/">Validador</a>
 
 ## License
 
