@@ -18,8 +18,10 @@ Usei o validador de HTML para construir o meu portifólio e todas as páginas de
 
 ## Links úteis
 
-Este é o link do meu projeto <a href= "https://anajulialeite.github.io/Meu_Portifolio/">Portifolio WebSite</a>
-
+<a href="https://anajulialeite.github.io/Meu_Portifolio/" style="text-decoration:none" target="_blank" rel="noopener noreferrer">
+   <img src="https://img.shields.io/badge/Portfólio-%23ff6601?style=for-the-badge&logo=github&logoColor=white" alt="Portfólio"/>
+</a>
+<br></br>
 Link do <a href= "https://validator.w3.org/">Validador</a>
 
 ## License
