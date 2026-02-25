@@ -183,7 +183,7 @@ ul {
 .nav-logo img {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 8px;
     object-fit: cover;
 }
 
@@ -874,10 +874,24 @@ ul {
     -webkit-backdrop-filter: blur(10px);
 }
 
-.contact-card i {
-    font-size: 2.5rem;
+.contact-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    object-fit: cover;
+    border: 3px solid var(--accent);
+    box-shadow: 0 0 30px var(--accent-glow);
+    margin-bottom: 12px;
+}
+
+.contact-logo-subtitle {
+    display: block;
+    font-size: 0.85rem;
     color: var(--accent);
-    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
 }
 
 .contact-card h3 {
