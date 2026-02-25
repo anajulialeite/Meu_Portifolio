@@ -120,10 +120,37 @@ filterBtns.forEach(btn => {
 // ===== HEADER BACKGROUND ON SCROLL =====
 const header = document.getElementById('header');
 
-window.addEventListener('scroll', () => {
+function updateHeaderBg() {
+    const isLight = document.documentElement.getAttribute('data-theme') === 'light';
     if (window.scrollY > 50) {
-        header.style.background = 'rgba(10, 10, 15, 0.95)';
+        header.style.background = isLight ? 'rgba(248, 247, 244, 0.95)' : 'rgba(10, 10, 15, 0.95)';
     } else {
-        header.style.background = 'rgba(10, 10, 15, 0.8)';
+        header.style.background = isLight ? 'rgba(248, 247, 244, 0.8)' : 'rgba(10, 10, 15, 0.8)';
     }
+}
+
+window.addEventListener('scroll', updateHeaderBg);
+
+// ===== THEME TOGGLE =====
+const themeToggle = document.getElementById('themeToggle');
+
+function getPreferredTheme() {
+    const saved = localStorage.getItem('portfolioTheme');
+    if (saved) return saved;
+    return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+}
+
+function setTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('portfolioTheme', theme);
+    themeToggle.textContent = theme === 'light' ? '☀️' : '🌙';
+    updateHeaderBg();
+}
+
+themeToggle.addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-theme') || 'dark';
+    setTheme(current === 'dark' ? 'light' : 'dark');
 });
+
+// Initialize theme
+setTheme(getPreferredTheme());
