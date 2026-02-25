@@ -1,6 +1,6 @@
 # Meu Portifólio
 
-<img src="imagens/Logo.jpg" alt="Logo" align="left" width="170">
+<img src="assets/img/logo.jpg" alt="Logo" align="left" width="170">
 
 Este é o meu portifólio pessoal e profissional que estarei compartilhando no meu Linkedin. Este é mais um projeto para mostrar um pouco mais do meu trabalho. Entre em contato que também faço o seu!
 
@@ -14,7 +14,7 @@ Usei o validador de HTML para construir o meu portifólio e todas as páginas de
 
 ## Demonstração
 
-<img src="imagens/Portifolio.png" alt="Portifolio" align="center" width="300"/>
+<img src="assets/img/Index.png" alt="Portifolio" align="center" width="300"/>
 
 ## Links úteis
 
