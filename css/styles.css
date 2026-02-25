@@ -23,6 +23,80 @@
     --nav-height: 72px;
 }
 
+/* ===== LIGHT THEME ===== */
+[data-theme="light"] {
+    --bg-primary: #f8f7f4;
+    --bg-secondary: #efede8;
+    --bg-card: rgba(0, 0, 0, 0.03);
+    --bg-card-hover: rgba(0, 0, 0, 0.06);
+    --glass: rgba(0, 0, 0, 0.04);
+    --glass-border: rgba(0, 0, 0, 0.1);
+    --text-primary: #1a1a2e;
+    --text-secondary: #4a4a5a;
+    --text-muted: #7a7a8a;
+    --accent: #e05520;
+    --accent-light: #c44a18;
+    --accent-glow: rgba(224, 85, 32, 0.2);
+    --gradient-accent: linear-gradient(135deg, #e05520, #FF6B35, #FF8F65);
+    --gradient-hero: linear-gradient(135deg, #e05520 0%, #c44a18 50%, #FF8F65 100%);
+    --shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Smooth theme transition */
+body,
+body *:not(script):not(style) {
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Light theme header scroll background override */
+[data-theme="light"] #header {
+    background: rgba(248, 247, 244, 0.9) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+/* Light theme text on gradient stays readable */
+[data-theme="light"] .hero-name {
+    --gradient-hero: linear-gradient(135deg, #c44a18 0%, #e05520 50%, #FF6B35 100%);
+}
+
+/* Light theme project thumb background */
+[data-theme="light"] .project-thumb {
+    background: #e8e6e1;
+}
+
+/* Light theme mobile menu */
+[data-theme="light"] .nav-links.open {
+    background: rgba(248, 247, 244, 0.97);
+}
+
+/* Light theme shape blobs less visible */
+[data-theme="light"] .shape {
+    opacity: 0.08;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background: var(--bg-card);
+    border: 1px solid var(--glass-border);
+    color: var(--text-primary);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all var(--transition);
+}
+
+.theme-toggle:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--accent);
+    transform: scale(1.1);
+}
+
 /* ===== RESET ===== */
 *,
 *::before,
@@ -745,7 +819,7 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 48px;
-    align-items: start;
+    align-items: center;
 }
 
 .contact-item {
