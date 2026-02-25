@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(228, 202, 228);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.center {
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Organiza os itens verticalmente */
+    align-items: center; /* Alinha os itens horizontalmente no centro */
+    justify-content: center;
+    gap: 5px; /* Controla o espaçamento entre a imagem e os títulos */
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.center {
+    animation: girar 4s linear infinite;
+}
+
+h1, h2 {
+    color: white;
+}
+
+h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.801);
+}
+
+h2 {
+    background-color: #9a4993;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    margin: -10px -0px 0px -0px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.lista_link {
+    background-color: white;
+    padding: 10px;
+    border-radius: 0px 0px 20px 20px ;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.288);
+}
+
+.lista_link img {
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.849);
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.lista_link img:hover {
+    border: 3px solid purple;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.774);
+    transition: transform 0.5s, border 0.3s;
+}
+
+.lista_link img:active {
+    transform: scale(95%);
+}
+
+li {
+    padding: 10px;
+}
+
+.image {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.image img {
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.781);
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image img:hover {
+    transform: translateY(-5px); /* Sobe 5px */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    text-shadow:  2px 2px 4px rgba(0, 0, 0, 0.801);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: purple;
+}
+
+.hover {
+    color: #400D01;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.hover a:hover {
+    color: rgb(97, 5, 97);
+}

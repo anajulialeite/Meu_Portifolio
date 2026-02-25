@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body {
+    background-color: #f7ddc9;
+    background-attachment: fixed;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+}
+    
+.centro {
+    text-align: center;
+}
+
+.img-fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .img-fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }  
+
+h1 {
+    color: #fe6601;
+    text-align: center;
+}
+
+a {
+    color: #400D01;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #fe6601;
+}
+
+.center p {
+    text-align: center;
+}

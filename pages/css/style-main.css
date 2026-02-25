@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow: hidden;
+}
+
+header {
+    height: auto; /* Alterado para auto */
+    display: flex;
+    justify-content: space-between; /* Espaçamento entre logo e menu */
+    align-items: center; /* Alinhamento vertical */
+    padding: 10px 20px; /* Adicionado padding */
+    position: relative; /* Adicionado para posicionar o menu hambúrguer */
+}
+
+.menu {
+    background-color: #fe6601;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Alterado para flex */
+    align-items: center; /* Alinhamento vertical */
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    align-items: center;
+    display: flex;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
+}
+
+a {
+    color: #f7cdaf;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.centered {
+    display: block;
+    text-align: center;
+}
+
+main {
+    flex: 1; /* Para ocupar o espaço restante */
+    display: inline-flex; /* Adicionado para centralizar o conteúdo */
+    flex-direction: rom; /* Organizar em coluna */
+    justify-content: space-evenly; /* Centralizar verticalmente */
+    align-items: center; /* Centralizar horizontalmente */
+    margin-top: 100px;
+    padding-bottom: 0;
+}
+
+.text-below-logo .site-title {
+    margin-bottom: 140px;
+}
+
+
+.site-title {
+    background: linear-gradient(45deg, #FA8E0B, #E45C01, #FA490B, #F0240B, #FA490B);
+    background-size: 400% 100%;
+    font-size: 4em;
+    text-transform: uppercase;
+    text-align: center;
+    animation: degrade 10s linear infinite alternate;
+    padding-bottom: 200px;
+    margin-bottom: 25px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.baixo img {
+    margin-top: 18px;
+    width: 400px;
+}
+
+
+@keyframes degrade {
+    0%{
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+.site-subtitle {
+    text-align: italic;
+}
+
+footer{
+    background-color: #400D01;
+    color: #f7cdaf;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a{
+    color: #f7cdaf;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: white;
+}
