@@ -929,6 +929,16 @@ footer {
 .footer-content a {
     color: var(--accent);
     font-weight: 600;
+    transition: all var(--transition);
+    background: linear-gradient(135deg, #00E5FF, #7C4DFF, #E040FB);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.footer-content a:hover {
+    -webkit-text-fill-color: transparent;
+    filter: brightness(1.2);
+    transform: scale(1.05);
 }
 
 /* ===== REVEAL ANIMATIONS ===== */
