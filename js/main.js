@@ -1,4 +1,4 @@
-// ===== LANGUAGE TOGGLE =====
+
 const langToggle = document.getElementById('langToggle');
 let currentLang = localStorage.getItem('portfolioLang') || 'pt';
 
@@ -29,10 +29,9 @@ langToggle.addEventListener('click', () => {
     setLanguage(currentLang === 'pt' ? 'en' : 'pt');
 });
 
-// Initialize language
 setLanguage(currentLang);
 
-// ===== MOBILE MENU =====
+
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
 
@@ -42,7 +41,7 @@ hamburger.addEventListener('click', () => {
     document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
 });
 
-// Close menu when a link is clicked
+
 navLinks.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
         hamburger.classList.remove('active');
@@ -51,7 +50,7 @@ navLinks.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-// ===== ACTIVE NAV HIGHLIGHT =====
+
 const sections = document.querySelectorAll('.section');
 const navLinkEls = document.querySelectorAll('.nav-link');
 
@@ -77,7 +76,7 @@ function updateActiveNav() {
 window.addEventListener('scroll', updateActiveNav);
 updateActiveNav();
 
-// ===== SCROLL REVEAL ANIMATIONS =====
+
 const revealElements = document.querySelectorAll('.reveal-left, .reveal-right, .reveal-up');
 
 const revealObserver = new IntersectionObserver((entries) => {
@@ -93,7 +92,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 revealElements.forEach(el => revealObserver.observe(el));
 
-// ===== PROJECT FILTER =====
+
 const filterBtns = document.querySelectorAll('.filter-btn');
 const projectCards = document.querySelectorAll('.project-card');
 
@@ -108,7 +107,7 @@ filterBtns.forEach(btn => {
             const category = card.getAttribute('data-category');
             if (filter === 'all' || category === filter) {
                 card.classList.remove('hidden');
-                // Re-trigger reveal animation
+
                 setTimeout(() => card.classList.add('revealed'), 50);
             } else {
                 card.classList.add('hidden');
@@ -117,7 +116,7 @@ filterBtns.forEach(btn => {
     });
 });
 
-// ===== HEADER BACKGROUND ON SCROLL =====
+
 const header = document.getElementById('header');
 
 function updateHeaderBg() {
@@ -131,7 +130,7 @@ function updateHeaderBg() {
 
 window.addEventListener('scroll', updateHeaderBg);
 
-// ===== THEME TOGGLE =====
+
 const themeToggle = document.getElementById('themeToggle');
 
 function getPreferredTheme() {
@@ -152,5 +151,4 @@ themeToggle.addEventListener('click', () => {
     setTheme(current === 'dark' ? 'light' : 'dark');
 });
 
-// Initialize theme
 setTheme(getPreferredTheme());
