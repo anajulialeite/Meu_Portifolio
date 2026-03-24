@@ -596,6 +596,15 @@ ul {
     align-items: center;
 }
 
+.about-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: fit-content;
+    transform: translateY(-40px);
+}
+
 .about-image img {
     border-radius: var(--arredondamento-lg);
     box-shadow: var(--sombra);
@@ -608,6 +617,7 @@ ul {
     color: var(--texto-secundario);
     margin-bottom: 16px;
     font-size: 1rem;
+    text-align: justify;
 }
 
 .about-stats {
