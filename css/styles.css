@@ -782,6 +782,8 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
     opacity: 0;
     transition: opacity var(--transicao);
 }
