@@ -593,16 +593,15 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1.4fr;
     gap: 60px;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .about-image {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    align-self: center;
+    align-self: flex-start;
     height: fit-content;
-    transform: translateY(-40px);
 }
 
 .about-image img {
