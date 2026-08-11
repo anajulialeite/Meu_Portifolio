@@ -93,28 +93,35 @@ const revealObserver = new IntersectionObserver((entries) => {
 revealElements.forEach(el => revealObserver.observe(el));
 
 
-const filterBtns = document.querySelectorAll('.filter-btn');
-const projectCards = document.querySelectorAll('.project-card');
+function setupFilters(containerSelector, btnSelector, cardSelector) {
+    const container = document.querySelector(containerSelector);
+    if (!container) return;
 
-filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
+    const filterBtns = document.querySelectorAll(btnSelector);
+    const cards = document.querySelectorAll(cardSelector);
 
-        const filter = btn.getAttribute('data-filter');
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
 
-        projectCards.forEach(card => {
-            const category = card.getAttribute('data-category');
-            if (filter === 'all' || category === filter) {
-                card.classList.remove('hidden');
+            const filter = btn.getAttribute('data-filter');
 
-                setTimeout(() => card.classList.add('revealed'), 50);
-            } else {
-                card.classList.add('hidden');
-            }
+            cards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                if (filter === 'all' || category === filter) {
+                    card.classList.remove('hidden');
+                    setTimeout(() => card.classList.add('revealed'), 50);
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
         });
     });
-});
+}
+
+setupFilters('.project-filters', '.project-filters .filter-btn', '.project-card');
+setupFilters('.skill-filters', '.skill-filters .filter-btn', '.skill-card');
 
 
 const header = document.getElementById('header');
