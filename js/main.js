@@ -159,3 +159,72 @@ themeToggle.addEventListener('click', () => {
 });
 
 setTheme(getPreferredTheme());
+
+// G1 style update time calculation (Dynamic from GitHub Commits)
+const updateTimeEl = document.getElementById('updateTime');
+if (updateTimeEl) {
+    let updateDate = new Date(); // default to now, will be replaced
+    let isFetched = false;
+
+    function updateElapsed() {
+        if (!isFetched) return;
+        const now = new Date();
+        let diffMs = now - updateDate;
+        if (diffMs < 0) diffMs = 0;
+        const diffMins = Math.floor(diffMs / 60000);
+        const diffHours = Math.floor(diffMins / 60);
+        const diffDays = Math.floor(diffHours / 24);
+        
+        let elapsedPt = '';
+        let elapsedEn = '';
+        
+        if (diffMins < 60) {
+            elapsedPt = diffMins <= 1 ? 'há 1 minuto' : `há ${diffMins} minutos`;
+            elapsedEn = diffMins <= 1 ? '1 minute ago' : `${diffMins} minutes ago`;
+        } else if (diffHours < 24) {
+            elapsedPt = diffHours === 1 ? 'há 1 hora' : `há ${diffHours} horas`;
+            elapsedEn = diffHours === 1 ? '1 hour ago' : `${diffHours} hours ago`;
+        } else if (diffDays < 30) {
+            elapsedPt = diffDays === 1 ? 'há 1 dia' : `há ${diffDays} dias`;
+            elapsedEn = diffDays === 1 ? '1 day ago' : `${diffDays} days ago`;
+        } else if (diffDays < 365) {
+            const months = Math.floor(diffDays / 30);
+            elapsedPt = months === 1 ? 'há 1 mês' : `há ${months} meses`;
+            elapsedEn = months === 1 ? '1 month ago' : `${months} months ago`;
+        } else {
+            const years = Math.floor(diffDays / 365);
+            elapsedPt = years === 1 ? 'há 1 ano' : `há ${years} anos`;
+            elapsedEn = years === 1 ? '1 year ago' : `${years} years ago`;
+        }
+        
+        const day = String(updateDate.getDate()).padStart(2, '0');
+        const month = String(updateDate.getMonth() + 1).padStart(2, '0');
+        const year = updateDate.getFullYear();
+        const hours = String(updateDate.getHours()).padStart(2, '0');
+        const minutes = String(updateDate.getMinutes()).padStart(2, '0');
+        
+        const isEn = document.documentElement.lang === 'en';
+        if (isEn) {
+            updateTimeEl.textContent = `${month}/${day}/${year} ${hours}:${minutes} • Updated ${elapsedEn}`;
+        } else {
+            updateTimeEl.textContent = `${day}/${month}/${year} ${hours}h${minutes} • Atualizado ${elapsedPt}`;
+        }
+    }
+    
+    // Fetch latest commit date from GitHub API
+    fetch('https://api.github.com/repos/anajulialeite/Meu_Portifolio/commits?per_page=1')
+        .then(response => response.json())
+        .then(data => {
+            if (data && data.length > 0 && data[0].commit) {
+                updateDate = new Date(data[0].commit.committer.date);
+                isFetched = true;
+                updateElapsed();
+            }
+        })
+        .catch(err => console.error("Error fetching commit date:", err));
+
+    const langBtn = document.getElementById('langToggle');
+    if (langBtn) {
+        langBtn.addEventListener('click', () => setTimeout(updateElapsed, 50));
+    }
+}
