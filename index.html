@@ -541,20 +541,48 @@
                                 target="_blank">Ana Júlia Leite</a>
                         </div>
                     </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h3 data-pt="Localização" data-en="Location">Localização</h3>
+                            <span data-pt="Brasil" data-en="Brazil">Brasil</span>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="contact-cta reveal-right">
                     <div class="contact-card">
                         <img src="assets/img/logo_new.png" alt="AJ — Criar e Desenvolver" class="contact-logo">
                         <span class="contact-logo-subtitle">Criar e Desenvolver</span>
-                        <h3 data-pt="Vamos trabalhar juntos?" data-en="Shall we work together?">Vamos trabalhar juntos?
-                        </h3>
-                        <p data-pt="Estou disponível para projetos freelancer. Entre em contato e vamos transformar sua ideia em realidade!"
-                            data-en="I'm available for freelance projects. Get in touch and let's turn your idea into reality!">
-                            Estou disponível para projetos freelancer. Entre em contato e vamos transformar sua ideia em
-                            realidade!</p>
-                        <a href="mailto:leite.anajulia25@gmail.com" class="btn btn-primary" data-pt="Enviar E-mail"
-                            data-en="Send Email">Enviar E-mail</a>
+                        <h3 data-pt="Vamos conversar?" data-en="Let's talk?">Vamos conversar?</h3>
+                        <p data-pt="Estou em busca de oportunidades como Desenvolvedora de Software, com foco em Back-end. Fique à vontade para entrar em contato para conversarmos sobre projetos, vagas ou futuras oportunidades."
+                            data-en="I'm looking for opportunities as a Software Developer, focusing on Back-end. Feel free to contact me to discuss projects, job openings, or future opportunities.">
+                            Estou em busca de oportunidades como Desenvolvedora de Software, com foco em Back-end. Fique à vontade para entrar em contato para conversarmos sobre projetos, vagas ou futuras oportunidades.</p>
+                        
+                        <form action="https://formsubmit.co/leite.anajulia25@gmail.com" method="POST" class="contact-form">
+                            <!-- Opcionais do FormSubmit para UX melhor -->
+                            <input type="hidden" name="_subject" value="Novo contato pelo Portfólio!">
+                            <input type="hidden" name="_template" value="box">
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label data-pt="NOME COMPLETO" data-en="FULL NAME">NOME COMPLETO</label>
+                                    <input type="text" name="name" placeholder="Seu nome completo" required>
+                                </div>
+                                <div class="form-group">
+                                    <label data-pt="ENDEREÇO DE E-MAIL" data-en="EMAIL ADDRESS">ENDEREÇO DE E-MAIL</label>
+                                    <input type="email" name="email" placeholder="seu@email.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label data-pt="MENSAGEM" data-en="MESSAGE">MENSAGEM</label>
+                                <textarea name="message" placeholder="Conte mais sobre o que você precisa..." rows="1" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <i class="fas fa-paper-plane" style="margin-right: 8px;"></i> 
+                                <span data-pt="Enviar mensagem" data-en="Send Message">Enviar mensagem</span>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>

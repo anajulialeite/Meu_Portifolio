@@ -880,15 +880,21 @@ ul {
     background: var(--fundo-cartao);
     border: 1px solid var(--borda-vidro);
     border-radius: var(--arredondamento-lg);
-    padding: 48px 36px;
+    padding: 32px 36px;
     text-align: center;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    transition: var(--transicao);
+}
+
+.contact-card:hover {
+    border-color: var(--cor-destaque);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
 }
 
 .contact-logo {
-    width: 100px;
-    height: 100px;
+    width: 115px;
+    height: 115px;
     border-radius: 16px;
     object-fit: cover;
     border: 3px solid var(--cor-destaque);
@@ -903,21 +909,89 @@ ul {
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .contact-card h3 {
     font-family: var(--fonte-titulo);
     font-size: 1.5rem;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .contact-card p {
-    color: var(--texto-suave);
-    margin-bottom: 28px;
+    color: var(--texto-secundario);
+    margin-bottom: 16px;
     font-size: 0.95rem;
 }
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 0;
+    text-align: left;
+}
+
+.form-row {
+    display: flex;
+    gap: 16px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-group label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--texto-secundario);
+}
+
+.form-group input,
+.form-group textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--texto-suave);
+    color: var(--texto-principal);
+    font-family: var(--fonte-texto);
+    font-size: 0.95rem;
+    padding: 8px 0;
+    transition: var(--transicao);
+    outline: none;
+    opacity: 0.8;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 40px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-bottom-color: var(--cor-destaque);
+    opacity: 1;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--texto-suave);
+    opacity: 0.6;
+}
+
+.contact-form .btn-submit {
+    width: 100%;
+    margin-top: 8px;
+    padding: 12px;
+    font-size: 1rem;
+}
 
 footer {
     background: var(--fundo-secundario);
@@ -1035,6 +1109,11 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 16px;
+    }
+
     .nav-links {
         position: fixed;
         top: 0;
