@@ -180,14 +180,20 @@ ul {
 }
 
 .nav-logo img {
-    width: 40px;
-    height: 40px;
-    border-radius: 8px;
-    object-fit: cover;
+    height: 48px;
+    width: auto;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: all var(--transicao);
 }
 
 .nav-logo:hover {
     color: var(--cor-destaque);
+}
+
+.nav-logo:hover img {
+    border-color: var(--cor-destaque);
+    box-shadow: 0 0 8px rgba(0, 229, 255, 0.4);
 }
 
 .nav-links {
@@ -896,7 +902,7 @@ ul {
     width: 115px;
     height: 115px;
     border-radius: 16px;
-    object-fit: cover;
+    object-fit: contain;
     border: 3px solid var(--cor-destaque);
     box-shadow: 0 0 30px var(--brilho-destaque);
     margin-bottom: 12px;
