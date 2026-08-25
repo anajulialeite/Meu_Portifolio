@@ -8,7 +8,11 @@ function setLanguage(lang) {
 
     const elements = document.querySelectorAll('[data-pt][data-en]');
     elements.forEach(el => {
-        el.textContent = el.getAttribute(`data-${lang}`);
+        if (el.hasAttribute('placeholder')) {
+            el.placeholder = el.getAttribute(`data-${lang}`);
+        } else {
+            el.textContent = el.getAttribute(`data-${lang}`);
+        }
     });
 
     const flag = langToggle.querySelector('.lang-flag');
